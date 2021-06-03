@@ -66,3 +66,15 @@ int main(void)
 
         return 0;
 }
+
+/*
+ Additional Notes:
+ 
+ What's a stream?
+ 
+ A stream represents a sequence of objects
+ (usually bytes, but not necessarily so),
+ which can be accessed in sequential order.
+ 
+ https://stackoverflow.com/questions/1216380/what-is-a-stream
+ */
