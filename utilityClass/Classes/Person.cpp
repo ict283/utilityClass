@@ -39,7 +39,7 @@ void Person::setAge(int ag)
 
 ostream& operator << (ostream &os, const Person &P)
 {
-    os<<"Person : "<<P.name<<", "<<P.age<<endl;
+    os<<"Person : "<<P.getName()<<", "<<P.getAge()<<endl;
     
     return os;
 }
@@ -62,8 +62,8 @@ istream& operator >> (istream &is, Person &P)
         is>>ag;
     }
     
-    P.name = nm;
-    P.age = ag;
+    P.setName(nm);
+    P.setAge(ag);
     
     return is;
 }

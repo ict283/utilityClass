@@ -52,7 +52,7 @@ int Prime::getPrime() const
 
 ostream& operator << (ostream &os, const Prime &P)
 {
-    os<<"Prime : "<<P.prime_num<<endl;
+    os<<"Prime : "<<P.getPrime()<<endl;
     return os;
 }
 
@@ -61,6 +61,6 @@ istream& operator >> (istream &is, Prime &P)
 {
     int n;
     is>>n;
-    P.prime_num = n;
+    P.setPrime(n);
     return is;
 }
