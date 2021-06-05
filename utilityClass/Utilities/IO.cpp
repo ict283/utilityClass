@@ -59,7 +59,7 @@ bool IO::personWriter (string file, Person& person){
     
         if(outfile.is_open())
         {
-            outfile<<"personWriter : "<<person.getName()<<person.getAge();
+            outfile<<"personWriter : "<<person.getName()<<", "<<person.getAge();
             outfile.close();
             result=true;
         }
