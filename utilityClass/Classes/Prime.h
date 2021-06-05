@@ -18,7 +18,7 @@ using namespace std;
 
 class Prime
 {
-    
+
 public:
 
 Prime();
@@ -30,11 +30,11 @@ bool setPrime(const int n);
 int getPrime() const;
 
 private:
-    
+
 bool isPrime(const int n);
 
 int prime_num;
-    
+
 };
 
 #endif /* Prime_h */

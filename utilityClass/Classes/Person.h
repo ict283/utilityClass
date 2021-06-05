@@ -31,7 +31,7 @@ private:
 string name;
 
 int age;
-    
+
 };
 
 #endif

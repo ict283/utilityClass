@@ -3,7 +3,7 @@
 #include "Prime.h"
 
 Prime::Prime(){
-    prime_num = -1; //default value
+        prime_num = -1; //default value
 }
 
 Prime::~Prime(){

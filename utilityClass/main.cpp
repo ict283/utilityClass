@@ -12,7 +12,7 @@ using namespace std;
 int main(void)
 {
         IO util;
-    
+
         /* File IO - Person Class */
         Person person;
         bool res_1 = util.personReader("person_in.txt",person);
@@ -22,7 +22,7 @@ int main(void)
         Prime prime;
         bool res_3 = util.primeReader("prime_in.txt",prime);
         bool res_4 = util.primeWriter("prime_out.txt",prime);
-    
+
         /* Debug: Show IO results */
         cout<<"personReader : "<<res_1<<endl;
         cout<<"personWriter : "<<res_2<<endl;
@@ -33,13 +33,13 @@ int main(void)
 }
 
 /*
- Additional Notes:
- 
- What's a stream?
- 
- A stream represents a sequence of objects
- (usually bytes, but not necessarily so),
- which can be accessed in sequential order.
- 
- https://stackoverflow.com/questions/1216380/what-is-a-stream
+   Additional Notes:
+
+   What's a stream?
+
+   A stream represents a sequence of objects
+   (usually bytes, but not necessarily so),
+   which can be accessed in sequential order.
+
+   https://stackoverflow.com/questions/1216380/what-is-a-stream
  */
