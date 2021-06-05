@@ -37,8 +37,4 @@ int prime_num;
     
 };
 
-ostream& operator << (ostream &os, const Prime &P);
-         
-istream& operator >> (istream &is, Prime &P);
-
 #endif /* Prime_h */

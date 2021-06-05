@@ -34,8 +34,4 @@ int age;
     
 };
 
-ostream& operator << (ostream &os, const Person &P);
-     
-istream& operator >> (istream &is, Person &P);
-
 #endif

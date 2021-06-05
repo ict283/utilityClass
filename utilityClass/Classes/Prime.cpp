@@ -49,18 +49,3 @@ int Prime::getPrime() const
 {
         return prime_num;
 }
-
-ostream& operator << (ostream &os, const Prime &P)
-{
-    os<<"Prime : "<<P.getPrime()<<endl;
-    return os;
-}
-
-
-istream& operator >> (istream &is, Prime &P)
-{
-    int n;
-    is>>n;
-    P.setPrime(n);
-    return is;
-}
