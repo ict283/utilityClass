@@ -1,13 +1,10 @@
 // For review purposes only! Does not represent the actual solution!!
 
-#include <stdio.h>
-#include <iostream>
-#include <string>
 #include "Utilities/IO.h"
 #include "Classes/Person.h"
 #include "Classes/Prime.h"
 
-using namespace std;
+using namespace std; //https://www.geeksforgeeks.org/namespace-in-c/
 
 int main(void)
 {

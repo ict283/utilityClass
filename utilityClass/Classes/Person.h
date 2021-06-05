@@ -3,10 +3,9 @@
 #ifndef Person_H
 #define Person_H
 
-#include <stdio.h>
-#include <iostream>
+#include <string> //http://www.cplusplus.com/reference/string/string/
 
-using namespace std;
+using namespace std; //https://www.geeksforgeeks.org/namespace-in-c/
 
 class Person
 {

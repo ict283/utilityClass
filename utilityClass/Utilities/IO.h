@@ -3,12 +3,12 @@
 #ifndef IO_h
 #define IO_h
 
-#include <stdio.h>
-#include <fstream>
+#include <iostream> // https://www.cplusplus.com/reference/iostream/
+#include <fstream>  // https://www.cplusplus.com/reference/fstream/
 #include "../Classes/Person.h"
 #include "../Classes/Prime.h"
 
-using namespace std;
+using namespace std; //https://www.geeksforgeeks.org/namespace-in-c/
 
 class IO
 {
