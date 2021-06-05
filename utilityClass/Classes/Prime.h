@@ -19,10 +19,6 @@ using namespace std;
 class Prime
 {
     
-friend ostream& operator << (ostream &os, const Prime &P);
-         
-friend istream& operator >> (istream &is, Prime &P);
-    
 public:
 
 Prime();
@@ -40,4 +36,9 @@ bool isPrime(const int n);
 int prime_num;
     
 };
+
+ostream& operator << (ostream &os, const Prime &P);
+         
+istream& operator >> (istream &is, Prime &P);
+
 #endif /* Prime_h */

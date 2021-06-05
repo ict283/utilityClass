@@ -11,10 +11,6 @@ using namespace std;
 class Person
 {
 public:
-    
-friend ostream& operator << (ostream &os, const Person &P);
-     
-friend istream& operator >> (istream &is, Person &P);
 
 Person();
 
@@ -37,5 +33,9 @@ string name;
 int age;
     
 };
+
+ostream& operator << (ostream &os, const Person &P);
+     
+istream& operator >> (istream &is, Person &P);
 
 #endif
