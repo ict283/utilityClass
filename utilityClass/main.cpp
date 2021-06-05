@@ -15,13 +15,19 @@ int main(void)
     
         /* File IO - Person Class */
         Person person;
-        util.personReader("person_in.txt",person);
-        util.personWriter("person_out.txt",person);
+        bool res_1 = util.personReader("person_in.txt",person);
+        bool res_2 = util.personWriter("person_out.txt",person);
 
         /* File IO - Prime Class */
         Prime prime;
-        util.primeReader("prime_in.txt",prime);
-        util.primeWriter("prime_out.txt",prime);
+        bool res_3 = util.primeReader("prime_in.txt",prime);
+        bool res_4 = util.primeWriter("prime_out.txt",prime);
+    
+        /* Debug: Show IO results */
+        cout<<"personReader : "<<res_1<<endl;
+        cout<<"personWriter : "<<res_2<<endl;
+        cout<<"primeReader : "<<res_3<<endl;
+        cout<<"primeWriter : "<<res_4<<endl;
 
         return 0;
 }
