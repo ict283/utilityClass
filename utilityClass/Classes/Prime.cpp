@@ -3,7 +3,7 @@
 #include "Prime.h"
 
 Prime::Prime(){
-    prime_num = -1; //default value
+        prime_num = -1; //default value
 }
 
 Prime::~Prime(){
@@ -48,19 +48,4 @@ bool Prime::setPrime(const int n)
 int Prime::getPrime() const
 {
         return prime_num;
-}
-
-ostream& operator << (ostream &os, const Prime &P)
-{
-    os<<"Prime : "<<P.prime_num<<endl;
-    return os;
-}
-
-
-istream& operator >> (istream &is, Prime &P)
-{
-    int n;
-    is>>n;
-    P.prime_num = n;
-    return is;
 }

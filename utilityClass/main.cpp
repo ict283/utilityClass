@@ -1,68 +1,42 @@
-// For review purposes only! Does not represent the actual solution!
+// For review purposes only! Does not represent the actual solution!!
 
-#include <stdio.h>
-#include <iostream>
-#include <fstream> //filestream
-#include <string>
+#include "Utilities/IO.h"
 #include "Classes/Person.h"
 #include "Classes/Prime.h"
 
-using namespace std;
+using namespace std; //https://www.geeksforgeeks.org/namespace-in-c/
 
 int main(void)
 {
-        //File IO - Person Class
+        IO util;
 
+        /* File IO - Person Class */
         Person person;
-        ifstream infile_1 ("person_in.txt");
+        bool res_1 = util.personReader("person_in.txt",person);
+        bool res_2 = util.personWriter("person_out.txt",person);
 
-        if(infile_1.is_open())
-        {
-                infile_1>>person;
-                infile_1.close();
-        }
-        else
-        {
-                cout<<"Error reading file!"<<endl;
-        }
-
-        ofstream outfile_1 ("person_out.txt");
-
-        if(outfile_1.is_open())
-        {
-                outfile_1<<person;
-                outfile_1.close();
-        }
-        else
-        {
-                cout<<"Error writing file!"<<endl;
-        }
-
-        //File IO - Prime Class
-
+        /* File IO - Prime Class */
         Prime prime;
-        ifstream infile_2 ("prime_in.txt");
+        bool res_3 = util.primeReader("prime_in.txt",prime);
+        bool res_4 = util.primeWriter("prime_out.txt",prime);
 
-        if(infile_2.is_open())
-        {
-                infile_2>>prime;
-        }
-        else
-        {
-                cout<<"Error reading file!"<<endl;
-        }
-
-        ofstream outfile_2 ("prime_out.txt");
-
-        if(outfile_2.is_open())
-        {
-                outfile_2<<prime;
-                outfile_2.close();
-        }
-        else
-        {
-                cout<<"Error writing file!"<<endl;
-        }
+        /* Debug: Show IO results */
+        cout<<"personReader : "<<res_1<<endl;
+        cout<<"personWriter : "<<res_2<<endl;
+        cout<<"primeReader : "<<res_3<<endl;
+        cout<<"primeWriter : "<<res_4<<endl;
 
         return 0;
 }
+
+/*
+   Additional Notes:
+
+   What's a stream?
+
+   A stream represents a sequence of objects
+   (usually bytes, but not necessarily so),
+   which can be accessed in sequential order.
+
+   https://stackoverflow.com/questions/1216380/what-is-a-stream
+ */

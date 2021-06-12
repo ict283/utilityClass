@@ -36,34 +36,3 @@ void Person::setAge(int ag)
 {
         age = ag;
 }
-
-ostream& operator << (ostream &os, const Person &P)
-{
-    os<<"Person : "<<P.name<<", "<<P.age<<endl;
-    
-    return os;
-}
-
-
-istream& operator >> (istream &is, Person &P)
-{
-    string nm;
-    int ag;
-    
-    if(is.peek()!='\n')
-    {
-        getline(is,nm,',');
-        is>>ag;
-    }
-    else
-    {
-        is.ignore(1);
-        getline(is,nm,',');
-        is>>ag;
-    }
-    
-    P.name = nm;
-    P.age = ag;
-    
-    return is;
-}

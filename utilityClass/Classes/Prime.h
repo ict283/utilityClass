@@ -3,11 +3,9 @@
 #ifndef Prime_h
 #define Prime_h
 
-#include <stdio.h>
-#include <iostream>
-#include <ctype.h>
+#include <ctype.h> //http://www.cplusplus.com/reference/cctype/
 
-using namespace std;
+using namespace std; //https://www.geeksforgeeks.org/namespace-in-c/
 
 /*
    A prime is:
@@ -18,11 +16,7 @@ using namespace std;
 
 class Prime
 {
-    
-friend ostream& operator << (ostream &os, const Prime &P);
-         
-friend istream& operator >> (istream &is, Prime &P);
-    
+
 public:
 
 Prime();
@@ -34,10 +28,11 @@ bool setPrime(const int n);
 int getPrime() const;
 
 private:
-    
+
 bool isPrime(const int n);
 
 int prime_num;
-    
+
 };
+
 #endif /* Prime_h */

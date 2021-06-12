@@ -3,18 +3,13 @@
 #ifndef Person_H
 #define Person_H
 
-#include <stdio.h>
-#include <iostream>
+#include <string> //http://www.cplusplus.com/reference/string/string/
 
-using namespace std;
+using namespace std; //https://www.geeksforgeeks.org/namespace-in-c/
 
 class Person
 {
 public:
-    
-friend ostream& operator << (ostream &os, const Person &P);
-     
-friend istream& operator >> (istream &is, Person &P);
 
 Person();
 
@@ -35,7 +30,7 @@ private:
 string name;
 
 int age;
-    
+
 };
 
 #endif
